@@ -10,55 +10,86 @@
   
   <body>
     <header>
-      <h1>Adam Pham</h1>
+      <div>
+      <h1 id="home">Adam Pham</h1>
+        <nav>
+        <ul id="menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#project">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        </nav>
+      </div>
     </header>
 
     <main>
       <article>
-        <!--the picture and intro section are in one div-->
-        <div class="group">
-           <!--picture on the left always at 300px-->
-          <img class="item" src="adam-thinkful.jpg" alt="Adam Thinkful">
-          <div class=" item">
-            <!--this div contains my intro and contacts, it should be beside the picture-->
-            <h2>Hi I'm Adam!</h2>
-            <div>
-              <p>I am currently a Thinkful student living in Houston, Texas. While I'm excited to learn about software engineering, I wholeheartedly enjoy problem-solving and challenging myself. Upon learning more and more about coding, I often find myself looking for other ways on how I can improve my skills.</p>
-              
-              <p>I'm excited to work with and learn from fellow developers! If you are looking for a driven developer feel free to contact me.</p>
+        <section>
+          <!--the picture and intro section are in one div-->
+          <div class="group">
+            <!--picture on the left-->
+            <img class="item" src="adam-thinkful.jpg" alt="Adam Thinkful">
+            <div class=" item">
+              <!--this div contains my intro and contacts, it should be right of the picture-->
+              <h2>Hi I'm Adam!</h2>
+              <div>
+                <p>I am currently a Thinkful student living in Houston, Texas. While I'm excited to learn about software engineering, I wholeheartedly enjoy problem-solving and challenging myself. Upon learning more and more about coding, I often find myself looking for other ways on how I can improve my skills.</p>
+                
+                <p>I'm excited to work with and learn from fellow developers! If you are looking for a driven developer feel free to contact me.</p>
+              </div>
+              <hr>
+              <div>
+                <h3 id="contact">Contacts</h3>
+                <ul>
+                  <li><a href="mailto:adammtpham@gmail.com" target="_blank">Email</a></li>
+                  <li><a href="https://www.linkedin.com/in/adampham93/" target="_blank">LinkedIn</a></li>
+                  <li><a href="https://github.com/phamadam" target="_blank">GitHub</a></li>
+                </ul>
+              </div>
             </div>
-            <hr>
-            <div>
-              <h3>Contacts</h3>
+          </div>
+        </section>
+        <section>
+          <div>
+            <div class="centered">
+              <!--about me and projects are in this div-->
+              <h3 id="about">About me</h3>
+              <p>After completing my Associate's degree in Applied Science at Lone Star College, I was able to attend the University of Houston. At UH I was able to take classes for computer science and became instantly hooked on the subject. Upon taking my classes, I learned how to code in Python and C++. While going to school I also found a part-time job at Taney's Computer Services & Repair for a technician assistant position. I learned many skills there from assembling desktop computers to PC diagnostics. </p>
+              <!---->
+              <h3>Some of my hobbies</h3>
               <ul>
-                <li><a href="mailto:adammtpham@gmail.com" target="_blank">Email</a></li>
-                <li><a href="https://www.linkedin.com/in/adampham93/" target="_blank">LinkedIn</a></li>
-                <li><a href="https://github.com/phamadam" target="_blank">GitHub</a></li>
+                <li>Playing all kinds of sports, basketball, tennis, volleyball, etc.</li>
+                <li>Playing the drums</li>
+                <li>Board games</li>
+              </ul>
+            </div>
+            <div class="centered box round">
+              <h3 id="project">Projects</h3>
+              <ul>
+                <li><a href="https://phamadam.github.io/pizza/" target="_blank">Placeholder Title</a></li>
+                  <ul>
+                    <li>Placeholder description</li>
               </ul>
             </div>
           </div>
-        </div>
+        </section>
         <div>
-          <div class="centered">
-            <!--about me and projects are in this div-->
-            <h3>About me</h3>
-            <p>After completing my Associate's degree in Applied Science at Lone Star College, I was able to attend the University of Houston. At UH I was able to take classes for computer science and became instantly hooked on the subject. Upon taking my classes, I learned how to code in Python and C++. While going to school I also found a part-time job at Taney's Computer Services & Repair for a technician assistant position. I learned many skills there from assembling desktop computers to PC diagnostics. </p>
-            <!---->
-            <h3>Some of my hobbies</h3>
-            <ul>
-              <li>Playing all kinds of sports, basketball, tennis, volleyball, etc.</li>
-              <li>Playing the drums</li>
-              <li>Board games</li>
-            </ul>
-          </div>
-          <div class="centered box round">
-            <h3>Projects</h3>
-            <ul>
-              <li><a href="https://phamadam.github.io/pizza/" target="_blank">Placeholder</a></li>
-                <ul>
-                  <li>Placeholder description</li>
-            </ul>
-          </div>
+          <form action="https://formspree.io/adammtpham@gmail.com" method="post">
+            <label for="name"></label>
+            <input type="text" name="name" id="name" placeholder="Name"/>
+
+            <label for="email"></label>
+            <input type="text" name="email" id="email" required placeholder="Email"/>
+
+            <label for="subject"></label>
+            <input type="text" name="subject" id="subject" required placeholder="Subject"/>
+
+            <label for="text"></label>
+            <textarea type="text" name="text" id="text" required placeholder="Your Message"></textarea>
+
+            <button type="submit">Submit</button>
+          </form>
         </div>
       </article>  
     </main>
