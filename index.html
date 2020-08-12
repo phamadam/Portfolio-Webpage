@@ -76,17 +76,14 @@
       </section>
       <div class="small-form">
         <form action="https://formspree.io/adammtpham@gmail.com" method="post">
-          <label for="name"></label>
-          <input type="text" name="name" id="name" placeholder="Name"/>
 
-          <label for="email"></label>
-          <input type="text" name="email" id="email" required placeholder="Email"/>
+          <input type="text" name="name" id="name" placeholder="Name" aria-label="name"/>
 
-          <label for="subject"></label>
-          <input type="text" name="subject" id="subject" required placeholder="Subject"/>
+          <input type="text" name="email" id="email" required placeholder="Email" aria-label="email"/>
 
-          <label for="text"></label>
-          <textarea id="text" required placeholder="Your Message"></textarea>
+          <input type="text" name="subject" id="subject" required placeholder="Subject" aria-label="subject"/>
+
+          <textarea id="text" required placeholder="Your Message" aria-label="textarea"></textarea>
 
           <button type="submit">Submit</button>
         </form>
